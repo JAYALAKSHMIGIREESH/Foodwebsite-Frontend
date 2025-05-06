@@ -13,7 +13,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import CheckOut from "./pages/CheckOut";
 
 
-export const backendUrl = "http://localhost:3000"
+export const backendUrl = "https://foodwebsite-backend-1.onrender.com"
 
 
 const App=() =>{
