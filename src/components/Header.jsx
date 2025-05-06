@@ -51,7 +51,6 @@ const Header = () => {
 
 
         <div className="flex items-center space-x-4">
-          {/* Cart Button */}
           <button onClick={() => handleNavigation("/cart")} className="relative">
             <FiShoppingCart className="text-2xl text-gray-700 hover:text-orange-400 transition-colors" />
             {getCartCount() > 0 && (
@@ -61,7 +60,6 @@ const Header = () => {
             )}
           </button>
 
-          {/* User Icon */}
           {!token ? (
             <button onClick={() => navigate("/login")}>
               <BiUser className="text-2xl text-gray-700 hover:text-orange-400 transition-colors" />
@@ -90,7 +88,6 @@ const Header = () => {
             </div>
           )}
 
-          {/* Mobile Menu Toggle */}
           <button
             className="md:hidden text-3xl text-gray-800 focus:outline-none"
             onClick={toggleMenu}

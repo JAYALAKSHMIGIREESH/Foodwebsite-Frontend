@@ -9,7 +9,6 @@ const About = () => {
       </h1>
 
       <div className="flex flex-col pt-16 md:flex-row items-center justify-between gap-12">
-        {/* Text Section */}
         <motion.div
           className="w-full md:w-1/2 text-gray-800"
           initial={{ opacity: 0, x: -50 }}

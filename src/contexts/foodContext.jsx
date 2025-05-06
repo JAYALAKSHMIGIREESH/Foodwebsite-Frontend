@@ -1,4 +1,3 @@
-// src/contexts/foodContext.jsx
 import React, { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
@@ -12,7 +11,6 @@ export const FoodProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
   const [token, setToken] = useState(localStorage.getItem("token") || "");
 
-  // Sync token with localStorage
   useEffect(() => {
     if (token) {
       localStorage.setItem("token", token);
@@ -139,7 +137,6 @@ export const FoodProvider = ({ children }) => {
     }, 0);
   };
 
-  // Logout handler
   const logout = () => {
     setToken("");
     setCartItems({});

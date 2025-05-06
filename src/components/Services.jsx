@@ -29,7 +29,6 @@ const Services = () => {
 
   return (
     <div className="container mx-auto py-24">
-      {/* Animated heading */}
       <motion.h1
         className="text-3xl md:text-4xl font-bold text-black mb-20 text-center"
         initial={{ opacity: 0, y: -30 }}

@@ -18,8 +18,7 @@ const Menu = () => {
       toast.error("Please log in or register to add items to your cart.");
       navigate("/login");
     } else {
-      // Make sure addToCart only triggers the success message once
-      addToCart(productId, navigate);  // Pass navigate here
+      addToCart(productId, navigate);  
     }
   };
 

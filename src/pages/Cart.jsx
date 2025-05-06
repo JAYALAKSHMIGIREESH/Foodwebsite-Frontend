@@ -36,12 +36,11 @@ const Cart = () => {
     setLoading(true);
     setTimeout(() => {
       navigate("/checkout");
-    }, 1000); // Simulate delay
+    }, 1000); 
   };
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
-      {/* Loading Spinner Overlay */}
       {loading && (
         <div className="fixed inset-0 bg-white bg-opacity-60 flex items-center justify-center z-50">
           <DotLoader color="#f97316" size={60} />
@@ -59,7 +58,6 @@ const Cart = () => {
         </div>
       ) : (
         <div className="grid md:grid-cols-3 gap-10">
-          {/* Cart Items */}
           <div className="md:col-span-2 space-y-6">
             {cartProductList.map((item) => (
               <div
@@ -82,7 +80,7 @@ const Cart = () => {
                         type="number"
                         value={cartItems[item._id]}
                         min={1}
-                        disabled={loading} // ✅ Disable while loading
+                        disabled={loading} 
                         className="w-16 border rounded px-2 py-1"
                         onChange={(e) =>
                           updateQuantity(item._id, parseInt(e.target.value))
@@ -102,7 +100,6 @@ const Cart = () => {
             ))}
           </div>
 
-          {/* Cart Summary */}
           <div className="border p-6 rounded-lg shadow-md h-fit">
             <h3 className="text-xl font-bold mb-4">Summary</h3>
             <div className="flex justify-between mb-2">

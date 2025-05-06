@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <div className="relative w-full">
-      {/* Background Image Section */}
       <div className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] lg:h-[550px] overflow-hidden">
         <img
           className="absolute inset-0 w-full h-full object-cover"
@@ -13,7 +12,6 @@ const Hero = () => {
           alt="Background"
         />
 
-        {/* Overlay Content */}
         <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center text-center text-white bg-black bg-opacity-50 px-4">
           <div className="max-w-3xl mx-auto">
             <motion.h1

@@ -33,15 +33,13 @@ const Auth = ({ insideRegister }) => {
       if (response.data.success) {
         const token = response.data.token;
         setToken(token);
-        localStorage.setItem("token", token); // Persist token
+        localStorage.setItem("token", token); 
         toast.success(response.data.message);
 
-        // Clear form
         setName('');
         setEmail('');
         setPassword('');
 
-        // Resume pending cart item
         const pendingItem = localStorage.getItem("pendingCartItem");
         if (pendingItem) {
           localStorage.removeItem("pendingCartItem");

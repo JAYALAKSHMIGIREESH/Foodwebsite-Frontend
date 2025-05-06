@@ -9,7 +9,6 @@ const imageVariants = {
 const Item = () => {
   return (
     <div className="container mx-auto p-6" style={{ marginTop: "-30px" , marginBottom:"100px"}}>
-      {/* Title Animation */}
       <motion.h1
         className="text-3xl md:text-4xl font-bold text-black mb-16 text-center"
         initial={{ opacity: 0, y: -20 }}
@@ -21,7 +20,6 @@ const Item = () => {
       </motion.h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-        {/* Images */}
         {[
           "https://yummi-theme.myshopify.com/cdn/shop/files/festive-4.jpg?v=1614334588&width=1500",
           "https://yummi-theme.myshopify.com/cdn/shop/files/festive-5.jpg?v=1614334588&width=1500",
