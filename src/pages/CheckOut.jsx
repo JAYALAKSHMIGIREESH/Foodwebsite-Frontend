@@ -146,7 +146,7 @@ const CheckOut = () => {
             </div>
             <div className="flex justify-between mt-1">
               <span className="text-md text-gray-600">Delivery Fee:</span>
-              <span className="text-md text-gray-600">${delivery_fee.toFixed(2)}</span>
+              <span className="text-md text-gray-600">Rs{delivery_fee.toFixed(2)}</span>
             </div>
             <div className="flex justify-between mt-2 text-lg font-bold">
               <span>Total:</span>
