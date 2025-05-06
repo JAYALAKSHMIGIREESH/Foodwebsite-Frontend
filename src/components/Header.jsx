@@ -27,7 +27,6 @@ const Header = () => {
       navigate(path);
     }, 1000);
   };
-
   const toggleDropdown = () => setDropdownOpen((prev) => !prev);
 
   return (
@@ -45,7 +44,6 @@ const Header = () => {
             Chill <span className="text-orange-400">Grill</span>
           </h1>
         </Link>
-
 
         <div className="flex items-center space-x-4">
           <button onClick={() => handleNavigation("/cart")} className="relative">
@@ -84,12 +82,6 @@ const Header = () => {
               )}
             </div>
           )}
-
-          <button
-            className="md:hidden text-3xl text-gray-800 focus:outline-none"
-            onClick={toggleMenu}
-          >
-          </button>
         </div>
       </div>
     </header>
