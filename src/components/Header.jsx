@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo2.png";
 import { BiUser } from "react-icons/bi";
-import { CgMenuLeft } from "react-icons/cg";
 import { FiShoppingCart } from "react-icons/fi";
 import { DotLoader } from "react-spinners";
 import { foodContext } from "../contexts/foodContext";
@@ -11,7 +10,6 @@ import { toast } from "react-toastify";
 const Header = () => {
   const [loading, setLoading] = useState(false);
   const { getCartCount, token, setToken } = useContext(foodContext);
-  const [menuOpened, setMenuOpened] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -30,7 +28,6 @@ const Header = () => {
     }, 1000);
   };
 
-  const toggleMenu = () => setMenuOpened((prev) => !prev);
   const toggleDropdown = () => setDropdownOpen((prev) => !prev);
 
   return (
@@ -92,7 +89,6 @@ const Header = () => {
             className="md:hidden text-3xl text-gray-800 focus:outline-none"
             onClick={toggleMenu}
           >
-            <CgMenuLeft />
           </button>
         </div>
       </div>
