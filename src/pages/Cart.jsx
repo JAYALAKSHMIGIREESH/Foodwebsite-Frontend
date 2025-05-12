@@ -71,7 +71,7 @@ const Cart = () => {
                 />
                 <div className="flex-1 w-full">
                   <h2 className="text-lg font-semibold">{item.name}</h2>
-                  <p className="text-orange-500 font-bold">Rs{item.price}</p>
+                  <p className="text-orange-500 font-bold">Rs:{item.price}</p>
                   <div className="flex items-center justify-between mt-2">
                     <div className="flex items-center space-x-2">
                       <label htmlFor={`qty-${item._id}`}>Qty:</label>
