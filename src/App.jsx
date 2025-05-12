@@ -9,7 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Orders from "./pages/Orders";
 import Header from "./components/Header";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 import CheckOut from "./pages/CheckOut";
 
 

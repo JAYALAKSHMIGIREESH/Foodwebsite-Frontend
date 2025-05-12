@@ -75,7 +75,7 @@ const Menu = () => {
                   <div className="p-4">
                     <h3 className="font-semibold text-lg mb-2">{product.name}</h3>
                     <div className="flex justify-between items-center">
-                      <p className="text-orange-400 font-bold">${product.price}</p>
+                      <p className="text-orange-400 font-bold">Rs{product.price}</p>
                       <button
                         onClick={() => handleAddToCart(product._id)}
                         className="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700"

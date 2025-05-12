@@ -111,7 +111,7 @@ const CheckOut = () => {
         <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-6">
           <h2 className="text-2xl font-semibold text-green-800">Order Confirmed!</h2>
           <p className="mt-2">Thank you, {orderDetails.name}. Your order has been placed.</p>
-          <p className="mt-1">Total: ${orderDetails.total.toFixed(2)}</p>
+          <p className="mt-1">Total: Rs{orderDetails.total.toFixed(2)}</p>
           <p className="mt-1">Delivery Address: {orderDetails.address}</p>
           <p className="mt-1 text-sm text-gray-600">Redirecting to home page...</p>
         </div>
@@ -133,7 +133,7 @@ const CheckOut = () => {
                   <div className="flex-1">
                     <p className="font-medium">{item.name}</p>
                     <p className="text-gray-500">
-                      ${item.price} × {cartItems[item._id]}
+                      Rs{item.price} × {cartItems[item._id]}
                     </p>
                   </div>
                 </li>
@@ -150,7 +150,7 @@ const CheckOut = () => {
             </div>
             <div className="flex justify-between mt-2 text-lg font-bold">
               <span>Total:</span>
-              <span>${(cartTotal + delivery_fee).toFixed(2)}</span>
+              <span>Rs{(cartTotal + delivery_fee).toFixed(2)}</span>
             </div>
 
             <div className="mt-8">

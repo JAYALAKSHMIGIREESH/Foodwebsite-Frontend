@@ -71,7 +71,7 @@ const Cart = () => {
                 />
                 <div className="flex-1 w-full">
                   <h2 className="text-lg font-semibold">{item.name}</h2>
-                  <p className="text-orange-500 font-bold">${item.price}</p>
+                  <p className="text-orange-500 font-bold">Rs{item.price}</p>
                   <div className="flex items-center justify-between mt-2">
                     <div className="flex items-center space-x-2">
                       <label htmlFor={`qty-${item._id}`}>Qty:</label>
@@ -104,16 +104,16 @@ const Cart = () => {
             <h3 className="text-xl font-bold mb-4">Summary</h3>
             <div className="flex justify-between mb-2">
               <span>Subtotal:</span>
-              <span>${totalAmount.toFixed(2)}</span>
+              <span>Rs{totalAmount.toFixed(2)}</span>
             </div>
             <div className="flex justify-between mb-2">
               <span>Delivery Fee:</span>
-              <span>${delivery_fee.toFixed(2)}</span>
+              <span>Rs{delivery_fee.toFixed(2)}</span>
             </div>
             <hr className="my-2" />
             <div className="flex justify-between font-semibold text-lg">
               <span>Total:</span>
-              <span>${finalAmount.toFixed(2)}</span>
+              <span>Rs{finalAmount.toFixed(2)}</span>
             </div>
             <button
               onClick={handleCheckout}
